@@ -1,0 +1,25 @@
+|--- AcademicScore <= 79.50
+|   |--- AcademicScore <= 59.50
+|   |   |--- DeviceUsage <= 0.50
+|   |   |   |--- AttendanceRate <= 0.89
+|   |   |   |   |--- class: 1
+|   |   |   |--- AttendanceRate >  0.89
+|   |   |   |   |--- class: 0
+|   |   |--- DeviceUsage >  0.50
+|   |   |   |--- AcademicScore <= 29.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- AcademicScore >  29.50
+|   |   |   |   |--- DeviceUsage <= 4.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- DeviceUsage >  4.50
+|   |   |   |   |   |--- class: 0
+|   |--- AcademicScore >  59.50
+|   |   |--- class: 1
+|--- AcademicScore >  79.50
+|   |--- DeviceUsage <= 2.50
+|   |   |--- CourseParticipation <= 23.00
+|   |   |   |--- class: 1
+|   |   |--- CourseParticipation >  23.00
+|   |   |   |--- class: 2
+|   |--- DeviceUsage >  2.50
+|   |   |--- class: 2
